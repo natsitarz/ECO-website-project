@@ -1,0 +1,205 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        color: white;
+        background: linear-gradient(35deg, rgb(103, 243, 103), rgb(13, 75, 23));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    .nvbr-height {
+        border: 2px black solid;
+        height: 80px;
+    }
+    
+    .nvbr-color {
+        background-color: black;
+    }
+    
+    .not-current-link {
+        color: rgb(114, 108, 108);
+        font-weight: 200;
+        font-size: 14px;
+    }
+    
+    .current-link {
+        color: #ffffff;
+        font-weight: bolder;
+    }
+    
+    a:hover,
+    a:link,
+    a:visited,
+    a:active {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .blob {
+        top: 20%;
+        position: absolute;
+    }
+    
+    .img-blob-fluid {
+        max-height: 450px;
+        max-width: 500px;
+    }
+    
+    .top {
+        z-index: 1000;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: rgb(32, 87, 32);
+        width: 90px;
+        height: 40px;
+        border-radius: 20px;
+        line-height: 36px;
+        text-align: center;
+    }
+    
+    .download {
+        margin-right: 20px;
+        margin-left: 20px;
+        text-shadow: 2px 2px black;
+        box-shadow: 2px 2px 2px 1px black;
+        background-color: rgb(64, 147, 64);
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        line-height: 36px;
+        text-align: center;
+    }
+    
+    .shape-top {
+        margin-bottom: -100px;
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .title {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    
+    .title-download {
+        box-shadow: 2px 2px 4px 4px black;
+        margin-top: 150px;
+        margin-bottom: 20px;
+        max-width: 60%;
+        background: rgba(0, 0, 0, 0.5);
+        background-image: url(../img/download-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+    }
+    
+    .text-header {
+        margin-top: 100px;
+        font-size: 90px;
+        color: rgb(19, 87, 29);
+    }
+    
+    @keyframes arrow {
+        0%,
+        100% {
+            transform: translate(0, -10px);
+        }
+        50% {
+            transform: translate(0, 10px);
+        }
+    }
+    
+    .arrow-anim {
+        margin-top: 70px;
+        text-align: center;
+        text-shadow: 6px 3px black;
+        animation: arrow 4s infinite linear;
+        font-size: 40px;
+        margin-bottom: 120px;
+    }
+    
+    .text-sub {
+        text-indent: 30px;
+        color: white;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    
+    .first-info {
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px black;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    
+    .img-shadow {
+        filter: drop-shadow(10px 10px 14px #222);
+    }
+    
+    .img-fluid-phone {
+        rotate: 10deg;
+        z-index: 10;
+        max-width: 300px;
+    }
+    
+    @media only screen and (max-width: 1080px) {
+        .title {
+            margin-top: 100px;
+            margin-bottom: 20px;
+        }
+        .text-sub {
+            text-indent: 30px;
+            font-size: 30px;
+            font-weight: lighter;
+            margin-bottom: 20px;
+        }
+        .arrow-anim {
+            margin-top: 20px;
+            text-shadow: 6px 3px black;
+            animation: arrow 4s infinite linear;
+            font-size: 40px;
+            margin-bottom: 120px;
+        }
+        .img-fluid {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+        .img-blob-fluid {
+            max-height: 360px;
+            max-width: 450px;
+        }
+        .top {
+            z-index: 1000;
+            position: fixed;
+            bottom: 10px;
+            right: 30px;
+            background-color: rgb(32, 87, 32);
+            width: 120px;
+            height: 50px;
+            border-radius: 20px;
+            line-height: 46px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .nav-font-size {
+            font-size: 24px;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .title-download {
+            box-shadow: 2px 2px 4px 4px black;
+            margin-top: 200px;
+            margin-bottom: 10px;
+            padding-bottom: 70px;
+        }
+    }
