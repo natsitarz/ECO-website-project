@@ -96,8 +96,8 @@
     }
     
     .download-img {
-        width: 140px;
-        height: 50px;
+        width: 130px;
+        height: auto;
     }
     
     .legal-info {
@@ -214,7 +214,7 @@
             padding-bottom: 70px;
         }
         .download-img {
-            width: 110px;
-            height: 45px;
+            width: 120px;
+            height: 50px;
         }
     }
