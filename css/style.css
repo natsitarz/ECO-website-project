@@ -10,6 +10,72 @@
         background-attachment: fixed;
     }
     
+    .first-text-div {
+        background-color: #222;
+        border-radius: 40px;
+        height: 35rem;
+    }
+    
+    .plant {
+        max-width: 30%;
+    }
+    
+    .info-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-35vw, -30vh);
+        width: 70vw;
+        margin-top: 10vh;
+        border: 3px black solid;
+        border-radius: 30px;
+        height: 320px;
+        background: linear-gradient(45deg, rgb(30, 118, 22), rgb(93, 202, 26), rgb(7, 177, 112));
+        background-size: 400% 400%;
+        animation: 14s inf-bg linear infinite;
+    }
+    
+    @keyframes inf-bg {
+        100%,
+        0% {
+            background-position: 100%;
+        }
+        50% {
+            background-position: 0%;
+        }
+    }
+    
+    .text-header-info {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 4rem;
+        color: rgb(19, 87, 29);
+    }
+    
+    .contact-text-title {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    .contact-text {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    .text-sub-info {
+        text-align: center;
+        text-indent: 30px;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+    
     .nvbr-height {
         border: 2px black solid;
         height: 80px;
@@ -87,12 +153,14 @@
         box-shadow: 2px 2px 4px 4px black;
         margin-top: 150px;
         margin-bottom: 20px;
-        max-width: 60%;
+        box-shadow: 2px 2px 4px 4px black;
         background: rgba(0, 0, 0, 0.5);
-        background-image: url(../img/download-bg.jpg);
+        background-image: url(../img/download-bg.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-blend-mode: multiply;
+        z-index: 0;
+        max-width: 60%;
     }
     
     .download-img {
@@ -143,6 +211,14 @@
     
     .first-info {
         text-align: center;
+        color: white;
+        text-shadow: 1px 1px black;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .first-text {
+        text-align: left;
         color: white;
         text-shadow: 1px 1px black;
         font-size: 30px;
