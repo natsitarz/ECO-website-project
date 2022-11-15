@@ -13,11 +13,12 @@
     .first-text-div {
         background-color: #222;
         border-radius: 40px;
-        height: 35rem;
+        height: 55rem;
     }
     
-    .plant {
+    .phone {
         max-width: 30%;
+        height: auto;
     }
     
     .info-main {
@@ -236,6 +237,9 @@
     }
     
     @media only screen and (max-width: 1080px) {
+        .first-text-div {
+            height: 45rem;
+        }
         .download-img {
             width: 100px;
             height: 40px;
@@ -283,6 +287,9 @@
     }
     
     @media only screen and (max-width: 768px) {
+        .first-text-div {
+            height: 45rem;
+        }
         .title-download {
             box-shadow: 2px 2px 4px 4px black;
             margin-top: 200px;
