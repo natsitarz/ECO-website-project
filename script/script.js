@@ -6,6 +6,8 @@
 // function rok() {
 //    return Date().getFullYear()
 //}
+// document.getElementById("year").innerHTML = `ECO ${rok()}`
+////////////////////////////////
 
 //{Mozliwosc 3: }
 function aktualnyrok() {
