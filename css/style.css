@@ -25,7 +25,7 @@
     .first-text-div {
         background-color: #222;
         border-radius: 40px;
-        height: 55rem;
+        height: 54rem;
     }
     
     .col-darker {
@@ -148,6 +148,14 @@
         text-align: center;
     }
     
+    .online-btn {
+        width: 130px;
+        height: auto;
+        border-radius: 20px;
+        line-height: 36px;
+        text-align: center;
+    }
+    
     .download {
         margin-right: 20px;
         margin-left: 20px;
@@ -235,7 +243,7 @@
         color: white;
         text-shadow: 1px 1px black;
         font-size: 30px;
-        font-weight: bold;
+        font-weight: light;
     }
     
     .first-text {
@@ -243,7 +251,7 @@
         color: white;
         text-shadow: 1px 1px black;
         font-size: 30px;
-        font-weight: bold;
+        font-weight: normal;
     }
     
     .img-shadow {
@@ -260,7 +268,8 @@
         .first-text-div {
             height: 45rem;
         }
-        .download-img {
+        .download-img,
+        .online-btn {
             width: 100px;
             height: 40px;
         }
@@ -316,7 +325,8 @@
             margin-bottom: 10px;
             padding-bottom: 70px;
         }
-        .download-img {
+        .download-img,
+        .online-btn {
             width: 120px;
             height: 50px;
         }
