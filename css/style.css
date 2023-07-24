@@ -54,7 +54,9 @@
         border-radius: 30px;
         height: 320px;
         background-image: url(../img/inf-bg.jpg);
-        background-color: rgba(0, 0, 0, 0.67);
+        background-color: rgba(20, 20, 20, 0.67);
+        background-size: cover;
+        background-position: center;
         background-blend-mode: overlay;
         padding-right: 2rem;
         padding-left: 2rem;
@@ -190,7 +192,7 @@
         margin-bottom: 20px;
         box-shadow: 2px 2px 4px 4px black;
         background: rgba(0, 0, 0, 0.5);
-        background-image: url(../img/download-bg.png);
+        background-image: url(../img/download-bg.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-blend-mode: multiply;
