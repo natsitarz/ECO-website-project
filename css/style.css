@@ -5,7 +5,7 @@
     
     body {
         color: white;
-        background: rgba(0, 0, 0, 0.726);
+        background: rgba(0, 0, 0, 0.567);
         background-image: url(../img/bg.jpg);
         background-size: cover;
         background-blend-mode: overlay;
@@ -41,15 +41,14 @@
     }
     
     .info-main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-30vw, -30vh);
         width: 60vw;
-        margin-top: 10vh;
         border: 3px black solid;
         border-radius: 30px;
         height: 320px;
@@ -215,6 +214,8 @@
     }
     
     .app-info {
+        margin-left: 20px;
+        margin-right: 20px;
         margin-top: 70px;
         margin-bottom: 70px;
         font-weight: lighter;
@@ -283,6 +284,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 40vh;
         }
         .first-text-div {
             height: 45rem;
@@ -332,6 +334,25 @@
         .nav-font-size {
             font-size: 24px;
         }
+        .app-info {
+            margin-top: 150px;
+            font-size: 24px;
+        }
+        .contact-text-title {
+            font-size: 1.5rem;
+            font-weight: lighter;
+            text-align: center;
+        }
+        .contact-text {
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        .phone {
+            max-width: 25%;
+            height: auto;
+        }
     }
     
     @media only screen and (max-width: 768px) {
@@ -359,5 +380,13 @@
             font-size: 1rem;
             font-weight: 500;
             text-align: center;
+        }
+        .app-info {
+            margin-top: 50px;
+            font-size: 24px;
+        }
+        .phone {
+            max-width: 30%;
+            height: auto;
         }
     }
