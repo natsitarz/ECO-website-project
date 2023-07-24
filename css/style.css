@@ -5,7 +5,10 @@
     
     body {
         color: white;
-        background: linear-gradient(35deg, rgb(103, 243, 103), rgb(13, 75, 23));
+        background: rgba(0, 0, 0, 0.726);
+        background-image: url(../img/bg.jpg);
+        background-size: cover;
+        background-blend-mode: overlay;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
@@ -50,8 +53,8 @@
         border: 3px black solid;
         border-radius: 30px;
         height: 320px;
-        background-image: url(../img/inf-bg.jpeg);
-        background-color: rgb(12, 12, 12);
+        background-image: url(../img/inf-bg.jpg);
+        background-color: rgba(0, 0, 0, 0.67);
         background-blend-mode: overlay;
         padding-right: 2rem;
         padding-left: 2rem;
@@ -80,12 +83,12 @@
     .contact-text-title {
         font-size: 1.4rem;
         font-weight: lighter;
-        text-align: center;
+        text-align: right;
     }
     
     .contact-text {
         color: white;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 500;
         text-align: right;
     }
@@ -149,10 +152,13 @@
     }
     
     .online-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 130px;
         height: auto;
-        border-radius: 20px;
-        line-height: 36px;
+        background-color: rgba(0, 0, 0, 0.792);
+        border-radius: 10px;
         text-align: center;
     }
     
@@ -206,10 +212,19 @@
         text-shadow: 1px 1px rgba(0, 0, 0, 0.555);
     }
     
+    .app-info {
+        margin-top: 70px;
+        margin-bottom: 70px;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, 0.779);
+        text-align: center;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.555);
+    }
+    
     .text-header {
         margin-top: 100px;
         font-size: 90px;
-        color: rgb(19, 87, 29);
+        color: rgb(31, 170, 52);
     }
     
     @keyframes arrow {
@@ -254,10 +269,6 @@
         font-weight: normal;
     }
     
-    .img-shadow {
-        filter: drop-shadow(10px 10px 14px #222);
-    }
-    
     .img-fluid-phone {
         rotate: 10deg;
         z-index: 10;
@@ -265,6 +276,12 @@
     }
     
     @media only screen and (max-width: 1080px) {
+        .info-main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         .first-text-div {
             height: 45rem;
         }
@@ -339,6 +356,6 @@
             color: white;
             font-size: 1rem;
             font-weight: 500;
-            text-align: right;
+            text-align: center;
         }
     }
