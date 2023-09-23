@@ -7,8 +7,9 @@
         color: white;
         background: rgba(0, 0, 0, 0.567);
         background-image: url(../img/bg.jpg);
+        background-color: #436441;
         background-size: cover;
-        background-blend-mode: overlay;
+        background-blend-mode: multiply;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
