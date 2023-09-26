@@ -31,4 +31,4 @@ function getname() {
     divchange(maindiv, nextdiv);
 }
 
-let location = document.getElementById("location").value;
+let userLocation = document.getElementById("user-location").value;
