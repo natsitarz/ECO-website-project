@@ -1,8 +1,8 @@
+console.log("js file linked | should be working properly");
+
 function aktualnyrok() {
     document.getElementById("year").innerHTML = `ECO® ${new Date().getFullYear()}`
 }
-
-console.log("js file linked | should be working properly");
 
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
