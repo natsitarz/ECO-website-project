@@ -49,10 +49,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        width: 60vw;
+        width: 40vw;
         border: 3px black solid;
         border-radius: 30px;
-        height: 320px;
+        height: 240px;
         background-image: url(../img/inf-bg.jpg);
         background-color: rgba(20, 20, 20, 0.67);
         background-size: cover;
