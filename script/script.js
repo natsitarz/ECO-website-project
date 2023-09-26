@@ -45,7 +45,7 @@ async function checkWeather() {
             .then(result => {
                 try {
                     fetch(api.url + `lat=${result[0].lat}&lon=${result[0].lon}&units=metric&appid=${api.key}`)
-                        .then(aRes => aRes.json())
+                        .then(result => result.json())
                         .then(result => {
                             console.log(result);
                             let maindiv = document.getElementById("main-location").style;
