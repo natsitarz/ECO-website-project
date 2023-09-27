@@ -19,6 +19,19 @@ async function divchange(olddiv, nextdiv) {
     nextdiv.opacity = "1";
 }
 
+setWeather = (jsonAnotherResponse) => {
+    let weatherPlace = {
+        city: jsonAnotherResponse.name,
+        country: jsonAnotherResponse.sys.country
+    }
+    let weatherTemp = jsonAnotherResponse.main.temp;
+    let weatherDesc = jsonAnotherResponse.weather[0].description;
+    document.getElementById("weather-place").innerHTML = weatherPlace.city + ", " + weatherPlace.country;
+    document.getElementById("weather-temp").innerHTML = weatherTemp + "°C";
+    document.getElementById("weather-desc").innerHTML = weatherDesc;
+
+}
+
 function getname() {
     let username = document.getElementById("name").value;
     let maindiv = document.getElementById("main-name").style;
@@ -54,6 +67,7 @@ async function checkWeather() {
             document.getElementById("user-location").style.opacity = "0";
             document.getElementById("main-text-2").innerHTML = "Thanks!";
             divchange(maindiv, nextdiv);
+            setWeather(jsonAnotherResponse);
         }
     }
 
