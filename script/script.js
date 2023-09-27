@@ -42,7 +42,6 @@ async function checkWeather() {
     const search = async() => {
         let response = await fetch(api.decoder + userLocation + `&appid=${api.key}`)
         let jsonResponse = await response.json();
-        console.log(jsonResponse);
         if (jsonResponse.length == 0) {
             document.getElementById("main-text-2").innerHTML = "Sorry, we couldn't find your location. Try again!";
         } else {
