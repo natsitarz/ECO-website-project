@@ -117,6 +117,7 @@
         transition: all 2s;
         display: none;
         opacity: 0;
+        text-align: center;
     }
     
     .label-img {
@@ -156,6 +157,7 @@
         grid-row: 1;
         font-weight: bolder;
         font-size: 2.5rem;
+        text-align: left;
     }
     
     #bottom-right-advice {
@@ -164,6 +166,7 @@
         grid-row: 2;
         font-weight: light;
         font-size: 1.5rem;
+        text-align: right;
     }
     
     @media only screen and (max-width: 768px) {

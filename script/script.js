@@ -19,17 +19,37 @@ async function divchange(olddiv, nextdiv) {
     nextdiv.opacity = "1";
 }
 
+FahrenheitFunction = (celsius) => {
+    return (celsius * 9 / 5) + 32;
+}
+
+let originalWeatherTemp = undefined;
+
 setWeather = (jsonAnotherResponse) => {
     let weatherPlace = {
         city: jsonAnotherResponse.name,
         country: jsonAnotherResponse.sys.country
     }
+    let weatherTempText = document.getElementById("weather-temp");
     let weatherTemp = jsonAnotherResponse.main.temp;
     let weatherDesc = jsonAnotherResponse.weather[0].description;
+    originalWeatherTemp = weatherTemp;
     document.getElementById("weather-place").innerHTML = weatherPlace.city + ", " + weatherPlace.country;
-    document.getElementById("weather-temp").innerHTML = weatherTemp + "°C";
+    weatherTempText.innerHTML = Math.round(weatherTemp * 10) / 10 + "°C";
     document.getElementById("weather-desc").innerHTML = weatherDesc;
 
+}
+
+temp = () => {
+    let Celsius = document.getElementById("Celsius");
+    let Fahrenheit = document.getElementById("Fahrenheit");
+    let weatherTempText = document.getElementById("weather-temp");
+    if (Celsius.checked == true) {
+        weatherTempText.innerHTML = Math.round(originalWeatherTemp * 10) / 10 + "°C";
+    } else if (Fahrenheit.checked == true) {
+        console.log(FahrenheitFunction(originalWeatherTemp));
+        weatherTempText.innerHTML = Math.round((FahrenheitFunction(originalWeatherTemp)) * 10) / 10 + "°F";
+    }
 }
 
 function getname() {
