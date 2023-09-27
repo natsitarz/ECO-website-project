@@ -33,7 +33,7 @@ function getname() {
 
 const api = {
     key: "0de0369a923d40a6fb404f2f4ecb18ea",
-    decoder: "http://api.openweathermap.org/geo/1.0/direct?q=",
+    decoder: "https://api.openweathermap.org/geo/1.0/direct?q=",
     url: "https://api.openweathermap.org/data/2.5/weather?",
 }
 
