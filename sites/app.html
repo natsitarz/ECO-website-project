@@ -8,6 +8,17 @@
     <link rel="icon" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style-app.css">
     <script src="../script/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCoaQEvljirNmqUml3zCeuXj8Q4M1lTMA&libraries=places" type="text/javascript"></script>
+    <script type="text/javascript">
+        function initialize() {
+            var input = document.getElementById('user-location');
+            var options = {
+                types: ['(cities)']
+            };
+            var autocomplete = new google.maps.places.Autocomplete(input, options);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 
 <body>
@@ -26,7 +37,7 @@
     <div id="main-location">
         <img class="label-img" src="../img/favicon-real.png" alt="">
         <p class="main-text" id="main-text-2">Give us your location</p>
-        <input class="input" type="text" id="user-location" placeholder=" Input your location">
+        <input class="input" type="text" id="user-location" placeholder=" Input your location" autocomplete="on" size="50">
         <button class="button" id="done-2" onclick="checkWeather()">Let's check!</button>
     </div>
     <div id="main-weather">
@@ -35,10 +46,12 @@
             </p>
             <p class="desc-text" id="weather-temp"></p>
             <p class="desc-text" id="weather-desc"></p>
-            <label for="celsius">Celsius</label>
-            <input type="radio" id="Celsius" name="answer" onclick="temp()" checked>
-            <label for="fahrenheit">Fahrenheit</label>
-            <input type="radio" id="Fahrenheit" name="answer" onclick="temp()">
+            <div>
+                <label for="celsius">Celsius</label>
+                <input type="radio" id="Celsius" name="answer" onclick="temp()" checked>
+                <label for="fahrenheit">Fahrenheit</label>
+                <input type="radio" id="Fahrenheit" name="answer" onclick="temp()">
+            </div>
         </div>
         <div id="protips">
             <p id="top-left-advice">Cover small distances <br> on foot!</p>

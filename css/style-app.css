@@ -5,9 +5,12 @@
     }
     
     body {
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.932);
+        background-image: url(../img/weather-bg.jpeg);
+        background-blend-mode: overlay;
         width: 100vw;
         height: 100vh;
+        background-size: cover;
     }
     
     .label-panel {
@@ -47,6 +50,15 @@
         padding-left: 1rem;
         margin-bottom: 20px;
         transition: all 0.5s;
+    }
+    
+    .pac-container {
+        color: white !important;
+        background-color: rgba(0, 0, 0, 0.507) !important;
+    }
+    
+    .pac-item-query {
+        color: white !important;
     }
     
     .button {
@@ -140,6 +152,10 @@
     #weather {
         height: 30%;
         padding: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     
     #protips {
@@ -164,7 +180,7 @@
         justify-self: right;
         grid-column: 2;
         grid-row: 2;
-        font-weight: light;
+        font-weight: lighter;
         font-size: 1.5rem;
         text-align: right;
     }
@@ -175,5 +191,23 @@
         }
         #top-left-advice {
             font-size: 1.5rem;
+        }
+        #bottom-right-advice {
+            font-size: 1rem;
+        }
+    }
+    
+    @media only screen and (max-height: 654px) {
+        #main-weather {
+            margin-bottom: 10rem;
+        }
+        #weather {
+            margin-bottom: 1rem;
+        }
+        #top-left-advice {
+            font-size: 0.8rem;
+        }
+        #bottom-right-advice {
+            font-size: 0.7rem;
         }
     }
