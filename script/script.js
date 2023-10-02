@@ -1,5 +1,10 @@
 console.log("js file linked | should be working properly");
 
+function today() {
+    let today = new Date();
+    document.getElementById("today").innerHTML = today.getDate() + "." + (today.getMonth() + 1) + "." + today.getFullYear();
+}
+
 function aktualnyrok() {
     document.getElementById("year").innerHTML = `ECO® ${new Date().getFullYear()}`
 }
@@ -90,6 +95,7 @@ async function checkWeather() {
             setWeather(jsonAnotherResponse);
         }
     }
+
 
     search();
 }
